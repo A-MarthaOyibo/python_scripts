@@ -23,14 +23,14 @@ def verifyIpOctet(ip_addr):
                 if int(i) < 256 and int(i) > -1:
                     pass
                 else:
-                    return("invalid ip octet: " + a)
+                    return("invalid ip octet: " + ip_addr)
                     sys.exit()
             except:
-                return("invalid ip: " + a)
+                return("invalid ip: " + ip_addr)
                 sys.exit()
         return ("Success: IP is valid")
     else:
-        return("Invalid no of octet:" + a)
+        return("Invalid no of octet:" + ip_addr)
         sys.exit()
 
 # To add ip_extractor from json/yaml device file soon
